@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kemalper Haber</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="bhaber">
+                <a href="#">Kemalper Haber</a>
+                <div class="hava">
+                    <script language="javascript" src="https://havadurumu15gunluk.xyz/sitene-ekle/2/havadurumu2.js?il=İstanbul&ilce=Ümraniye&w=200&h=50&title=9fb8ff&bg=2e5789&ids=1650"></script>
+                </div>
+            </div>
+            <ul>
+                <li><a href="Anasayfa.html">Ana Sayfa</a>
+                <ul>
+                    <li><a href="Gundem.html">Gündem</a></li>
+                    <li><a href="Magazin.html">Magazin</a></li>
+                </ul>
+            </li>
+                <li><a href="Gundem.html">Gündem</a></li>
+                <li><a href="Spor.html" class="active">Spor</a></li>
+                <li><a href="Magazin.html">Magazin</a></li>
+                <li><a href="Iletişim.html">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="haber-container">
+            <div class="haber">
+                <div class="rating-container" id="rating-container-1">
+                    <span>Haberi Değerlendirin:</span>
+                    <div class="rating-stars" onclick="rateSite(1, event)">
+                        <span class="rating-star" data-value="1">★</span>
+                        <span class="rating-star" data-value="2">★</span>
+                        <span class="rating-star" data-value="3">★</span>
+                        <span class="rating-star" data-value="4">★</span>
+                        <span class="rating-star" data-value="5">★</span>
+                    </div>
+                </div>
+                  <img src="./spor1.jpg" width="400"  height="300px" />
+                  <h3>Panathinaikos, Fatih Terim'i açıkladı</h3>  
+                  <p>
+                    Panathinaikos, teknik direktörlük görevine Fatih Terim'in getirildiğini açıkladı! . <br>
+                    <a href="https://www.sporx.com/panathinaikos-fatih-terim-i-acikladi-SXHBQ1050019SXQ">haberin devamı için tıklayınız.</a>
+                  </p>              
+        </div>
+        <div class="haber">
+            <div class="rating-container" id="rating-container-2">
+                <span>Haberi Değerlendirin:</span>
+                <div class="rating-stars" onclick="rateSite(2, event)">
+                    <span class="rating-star" data-value="1">★</span>
+                    <span class="rating-star" data-value="2">★</span>
+                    <span class="rating-star" data-value="3">★</span>
+                    <span class="rating-star" data-value="4">★</span>
+                    <span class="rating-star" data-value="5">★</span>
+                </div>
+            </div>
+            <img src="./spor2.jpg" width="400"  height="300px" />
+            <h3>İzmit Belediyespor deplasmanda zorlanarak kazandı</h3>  
+            <p>
+                ING Kadınlar Basketbol Süper Ligi karşılaşmasında Mehmet Kavan Yapı İzmit Belediyespor deplasmanda ÇBK Mersin'i 76-73 mağlup etti. . <br>
+              <a href="https://www.sporx.com/izmit-belediyespor-deplasmanda-zorlanarak-kazandi-SXHBQ1050022SXQ">haberin devamı için tıklayınız.</a>
+            </p>              
+  </div>
+  <div class="haber">
+    <div class="rating-container" id="rating-container-3">
+        <span>Haberi Değerlendirin:</span>
+        <div class="rating-stars" onclick="rateSite(3, event)">
+            <span class="rating-star" data-value="1">★</span>
+            <span class="rating-star" data-value="2">★</span>
+            <span class="rating-star" data-value="3">★</span>
+            <span class="rating-star" data-value="4">★</span>
+            <span class="rating-star" data-value="5">★</span>
+        </div>
+    </div>
+    <img src="./spor3.jpg" width="400"  height="300px" />
+    <h3>Galatasaray, İlkin Aydın'la yola devam dedi!</h3>  
+    <p>
+        Galatasaray Daikin, İlkin Aydın'ın sözleşmesini 2 yıl uzattığını açıkladı. . <br>
+      <a href="https://www.sporx.com/galatasaray-ilkin-aydin-la-yola-devam-dedi-SXHBQ1050004SXQ">haberin devamı için tıklayınız.</a>
+    </p>              
+</div>
+        
+
+    </div>
+    <script>
+        function rateSite(articleNumber, event) {
+            const stars = document.querySelectorAll(`#rating-container-${articleNumber} .rating-star`);
+            const selectedValue = event.target.getAttribute('data-value');
+    
+            stars.forEach(star => {
+                if (star.getAttribute('data-value') <= selectedValue) {
+                    star.classList.add('selected');
+                } else {
+                    star.classList.remove('selected');
+                }
+            });
+    
+         
+        }
+    </script>
+</body>
+</html>
